@@ -8,12 +8,12 @@ To build driver we need to write, make file and save it in the same directory wh
 We can insert our driver module in kernel by using insmod command. 
 insmod character_driver.ko
 
-3) make device(In linux device can be file)
+3)make device(In linux device can be file)
 command: maknod /dev/mydev c 90 10
 
 4)check device : cat proc/devices
 
-5) chmod a+r+w /dev/mydev
+5)chmod a+r+w /dev/mydev
 
 6)compile and run test_app file
 
